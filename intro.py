@@ -38,6 +38,3 @@ flag1 = "".join(res)
 # by default the xor function make both its arg equal length, by repeating the shorter arg several times
 import pwn
 flag2 = pwn.xor(string.encode('ascii'), 13) # encode str to bytes before XORing
-
-
-
