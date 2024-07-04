@@ -32,7 +32,7 @@ bmsg2 = long_to_bytes(imsg)
 # XOR string & int
 string = "label"
 res_ord = [ord(ch) ^ 13 for ch in string]
-res = [chr(i) for i in res_ord]
+res = [chr(int(i)) for i in res_ord]
 flag1 = "".join(res)
 # or use `pwntools` module xor() function that can XOR together data of different types and lengths
 # by default the xor function make both its arg equal length, by repeating the shorter arg several times
